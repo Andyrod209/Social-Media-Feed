@@ -16,14 +16,15 @@ const CreatePost = (props) => {
     }
 
     return (
-        <form>
-            <div>
-                <input type='text' placeholder="Name" onChange={}/>
-                <input type='text' placeholder="Type anything :)"/>
-                <button onSubmit={handleSubmit}>Send out!</button>
-            </div>
+        <div>
+        <form onSubmit={handleSubmit}>
+            <input type='text' placeholder="Name" onChange={(event) => setName(event.target.value)}/>
+            <input type='text' placeholder="Type anything :)" onChange={(event) => setpost(event.target.value)}/>
+            <button type="submit" onSubmit={handleSubmit}>Send out!</button>
         </form>
+        </div>
     )
 }
 
-export default CreatePost;
+export default CreatePost;        
+    

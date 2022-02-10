@@ -1,15 +1,30 @@
-const DisplayPost = (props) => {    
-
+const DisplayPost = (props) => {
     return (
-        <form>
-            <div>    
-              <label>Name</label>
-              <p>It was a beautiful day till a tree turned into a volcano and my dog flew into it and saved the world RIP Shivi</p> 
-              <button type="checkbox">LOVED IT!</button>
-              <button type="checkbox">UM OKAY BRO</button>
-           </div>
-       </form>
-    )
+        <div className="container"> 
+            <h3>User Post</h3>
+            <table>
+                <thead>
+                    <tr>   
+                    <th>Name</th>
+                    <th>Post</th> 
+                    <th>Like or Dislike</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {props.parentPost.map((post, index) => {
+                        return (
+                            <tr key ={index}>
+                                <td>{post.name}</td>
+                                <td>{post.post}</td>
+                                <td><button type="submit">Like</button></td>
+                                <td><button type="checkbox" >Dislike</button></td>
+                            </tr>
+                        );
+                    })}
+                </tbody>
+            </table>
+        </div>
+    );
 }
 
 export default DisplayPost;
