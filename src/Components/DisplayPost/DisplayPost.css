@@ -1,0 +1,7 @@
+/* created to work on buttons but I think for now I am going to leave the buttons till later on... */
+.container {
+    background-color: aqua;
+    display: grid;
+    margin: 4em;
+    padding: 2em;
+}

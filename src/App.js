@@ -3,12 +3,13 @@ import DisplayPost from './Components/DisplayPost/DisplayPost.jsx';
 import CreatePost from './Components/CreatePost/CreatePost'
 import { useState } from 'react';
 
+
 function App() {
 
   const [userPost, setUserPost] = useState([{name: 'Andy Rodriguez', post: 'I ate a chicken today.'}, {name: 'Josh Madden', post: 'I like to move it move it!!!'}])
 
   function addNewPost(post) {
-    let tempPost = [...userPost, post];
+    let tempPost = [post, ...userPost];
     setUserPost(tempPost);
   }
 

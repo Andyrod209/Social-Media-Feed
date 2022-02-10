@@ -1,13 +1,14 @@
+import './DisplayPost.css';
 const DisplayPost = (props) => {
     return (
         <div className="container"> 
             <h3>User Post</h3>
-            <table>
+            <table >
                 <thead>
                     <tr>   
-                    <th>Name</th>
-                    <th>Post</th> 
-                    <th>Like or Dislike</th>
+                        <th>Name</th>
+                        <th>Post</th> 
+                        <th>Like or Dislike</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -16,8 +17,11 @@ const DisplayPost = (props) => {
                             <tr key ={index}>
                                 <td>{post.name}</td>
                                 <td>{post.post}</td>
-                                <td><button type="submit">Like</button></td>
-                                <td><button type="checkbox" >Dislike</button></td>
+                                <td>
+                                    <button type="submit">Like</button> 
+                                    <button type="checkbox" >Dislike</button>
+                                </td>
+                                
                             </tr>
                         );
                     })}
