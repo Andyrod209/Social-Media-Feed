@@ -1,8 +1,10 @@
+// import ToggleDislike from '../ToggleDislike/ToggleDislike';
+// import ToggleLike from '../ToggleLike/ToggleLike';
+import ToggleButton from '../ToggleButton/ToggleButton.jsx';
 import { useState } from 'react';
-import ToggleDislike from '../../ToggleDislike/ToggleDislike';
-import ToggleButton from '../ToggleButton/ToggleButton';
 import './DisplayPost.css';
 const DisplayPost = (props) => {
+
 
     return (
         <div className="container"> 
@@ -22,8 +24,7 @@ const DisplayPost = (props) => {
                                 <td>{post.name}</td>
                                 <td>{post.post}</td>
                                 <td>
-                                    <ToggleButton />
-                                    <ToggleDislike />
+                                    <ToggleButton/>
                                 </td>
                                 
                             </tr>

@@ -4,7 +4,7 @@ const ToggleDislike = (props) => {
     const[dislike, setDislike] = useState('normal')
 
     function handleDislikeClick (){
-        if (dislike == 'normal'){
+        if (dislike === 'normal'){
             setDislike('dislike');
         }
         else {
