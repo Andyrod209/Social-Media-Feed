@@ -1,5 +1,9 @@
+import { useState } from 'react';
+import ToggleDislike from '../../ToggleDislike/ToggleDislike';
+import ToggleButton from '../ToggleButton/ToggleButton';
 import './DisplayPost.css';
 const DisplayPost = (props) => {
+
     return (
         <div className="container"> 
             <h3>User Post</h3>
@@ -18,8 +22,8 @@ const DisplayPost = (props) => {
                                 <td>{post.name}</td>
                                 <td>{post.post}</td>
                                 <td>
-                                    <button type="submit">Like</button> 
-                                    <button type="checkbox" >Dislike</button>
+                                    <ToggleButton />
+                                    <ToggleDislike />
                                 </td>
                                 
                             </tr>

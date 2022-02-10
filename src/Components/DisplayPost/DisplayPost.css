@@ -4,4 +4,17 @@
     display: grid;
     margin: 4em;
     padding: 2em;
+    align-content: center;
+}
+
+.like {
+    background-color: rgba(46, 146, 204, 0.904);
+}
+
+.normal {
+    background-color: white;
+}
+
+.dislike {
+    background-color: red;
 }
